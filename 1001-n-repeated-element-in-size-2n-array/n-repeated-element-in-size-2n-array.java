@@ -1,0 +1,15 @@
+class Solution {
+    //leetcode 961
+    public int repeatedNTimes(int[] nums) {
+        Arrays.sort(nums);
+        int i = 1;
+        while (i <= nums.length){
+            if(nums[i] == nums[i-1]){
+                return nums[i];
+            }else{
+                i++;
+            }
+        }
+        return 0;
+    }
+}
