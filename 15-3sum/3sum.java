@@ -16,11 +16,7 @@ class Solution {
                 } else if (sum > 0) {
                     k--;
                 }else {
-                    List<Integer> temp = new ArrayList<>();
-                    temp.add(nums[i]);
-                    temp.add(nums[j]);
-                    temp.add(nums[k]);
-                    ans.add(temp);
+                    ans.add(Arrays.asList(nums[i], nums[j], nums[k]));
                     j++;
                     k--;
                     while(j<k && nums[j] == nums[j-1]) j++;
