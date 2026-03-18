@@ -4,7 +4,6 @@ class Solution {
         Arrays.sort(nums);
         int n = nums.length;
         int Result = nums[0] + nums[1] + nums[2];
-        int minDifference = Integer.MAX_VALUE;
 
         for(int i = 0;i<n;i++){
             int j = i+1;
@@ -18,15 +17,14 @@ class Solution {
                 }else {
                     k--;
                 }
-                int diffToTarget =  Math.abs(sum-target);
-                if(diffToTarget < minDifference){
+
+                if(Math.abs(sum - target) < Math.abs(target - Result)){
                     Result = sum;
-                    minDifference = diffToTarget;
                 }
 
             }
         }
-        return Result;       
+        return Result;
 
     }
 }
