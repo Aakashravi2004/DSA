@@ -5,8 +5,8 @@ class Solution {
             int Sum = 0;
             for(int ac : acc){
                 Sum += ac;
-                result = Math.max(Sum,result);
             }
+            if(Sum > result) result = Sum;
         }
         return result;
 
