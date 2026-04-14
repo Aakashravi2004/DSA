@@ -3,18 +3,13 @@ class Solution {
         if(s.length() < 3){
             return 0;
         }
-
-        int n = s.length() , count = 0;
-        HashSet<Character> hs = new HashSet<>();
-        for(int i = 0;i <= n-3; i++) {
-            hs = new HashSet<>();
-            for (int j = i; j <= (i + 3) - 1; j++) {
-                hs.add(s.charAt(j));
-            }
-            if(hs.size() == 3){
+        int count = 0;
+        for(int i=0;i < s.length()-2;i++){
+            if(s.charAt(i) != s.charAt(i+1) && s.charAt(i+1) != s.charAt(i+2) && s.charAt(i+2) != s.charAt(i)){
                 count++;
             }
         }
         return count;
+       
     }
 }
