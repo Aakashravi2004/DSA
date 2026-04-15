@@ -4,8 +4,8 @@ class Solution {
 		for (int j=i+1;j<arr.length;j++)
 		{
 			if(arr[i]!=arr[j]){
-				arr[i+1] = arr[j];
-				i++;
+                i++;
+				arr[i] = arr[j];	
 			}
 		}
 		return i+1;
