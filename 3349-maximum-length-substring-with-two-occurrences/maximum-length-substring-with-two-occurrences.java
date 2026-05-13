@@ -1,28 +1,23 @@
 class Solution {
     public int maximumLengthSubstring(String s) {
-        int result = 0;
-        for(int i=0; i<s.length() ; i++){
-            for(int j=i; j<s.length(); j++){
-                String sub = s.substring(i, j+1);
-                if (isValidSub(sub)){
-                    if(sub.length() > result){
-                        result = sub.length();
-                    }
-                }
+
+        int [] sFreq = new int[26];
+        int left=0 , maxLen = 0;
+
+        for(int right = 0 ; right < s.length() ; right++){
+            char c = s.charAt(right);
+            sFreq[c-'a']++;
+
+            while(sFreq[c-'a'] > 2){
+                sFreq[s.charAt(left) - 'a']--;
+                left++;
             }
-        }
-        return result;
+
+            maxLen = Math.max(maxLen,right - left + 1);
+        } 
+
+        return maxLen;
+
     }
-    static boolean isValidSub(String s){
-        int[] sFreq = new int[26];
-        for(int i=0; i<s.length(); i++){
-            sFreq[s.charAt(i)-'a']++;
-        }
-        for(int i=0; i<s.length(); i++){
-            if(sFreq[s.charAt(i)-'a']>2){
-                return false;
-            }
-        }
-        return true;
-    }
+
 }
