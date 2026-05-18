@@ -12,11 +12,11 @@ class Solution {
             matrix[i] = reverseMatrix(matrix[i]);
         }
     }
-    
+
      public static int[] reverseMatrix(int[] revMatrix){
         int i = 0;
         int j = revMatrix.length - 1;
-        while (i <= j) {
+        while (i < j) {
             int temp = revMatrix[i];
             revMatrix[i] = revMatrix[j];
             revMatrix[j] = temp;
