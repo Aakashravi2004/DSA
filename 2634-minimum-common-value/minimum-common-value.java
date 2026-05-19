@@ -1,25 +1,14 @@
 class Solution {
     public int getCommon(int[] nums1, int[] nums2) {
-        int ans = -1;
-        for(int i=0; i<nums1.length; i++){
-            ans = findCommon(nums1[i],nums2);
-            if(ans != -1){
-                return ans;
-            }
-        }
-        return ans;
-    }
-    public static int findCommon(int num, int[] nums2){
-        int start = 0;
-        int end = nums2.length-1;
-        while(start<=end){
-            int mid = (start+end)/2;
-            if(nums2[mid]==num){
-                return nums2[mid];
-            }else if(nums2[mid]<num){
-                start = mid+1;
-            }else{
-                end = mid-1;
+        int nums1Pointer = 0;
+        int nums2Pointer = 0;
+        while(nums1Pointer < nums1.length && nums2Pointer < nums2.length){
+            if(nums1[nums1Pointer] == nums2[nums2Pointer]){
+                return nums1[nums1Pointer];
+            }else if(nums1[nums1Pointer] > nums2[nums2Pointer]){
+                nums2Pointer++;
+            }else {
+                nums1Pointer++;
             }
         }
         return -1;
