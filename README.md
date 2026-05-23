@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [1752-check-if-array-is-sorted-and-rotated](https://github.com/Aakashravi2004/DSA/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [3411-maximum-subarray-with-equal-products](https://github.com/Aakashravi2004/DSA/tree/master/3411-maximum-subarray-with-equal-products) |
 ## Math
 |  |
