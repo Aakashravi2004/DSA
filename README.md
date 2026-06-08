@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0179-largest-number](https://github.com/Aakashravi2004/DSA/tree/master/0179-largest-number) |
 | [0455-assign-cookies](https://github.com/Aakashravi2004/DSA/tree/master/0455-assign-cookies) |
 | [0485-max-consecutive-ones](https://github.com/Aakashravi2004/DSA/tree/master/0485-max-consecutive-ones) |
 | [0724-find-pivot-index](https://github.com/Aakashravi2004/DSA/tree/master/0724-find-pivot-index) |
@@ -34,10 +35,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0179-largest-number](https://github.com/Aakashravi2004/DSA/tree/master/0179-largest-number) |
 | [0455-assign-cookies](https://github.com/Aakashravi2004/DSA/tree/master/0455-assign-cookies) |
 ## Sorting
 |  |
 | ------- |
+| [0179-largest-number](https://github.com/Aakashravi2004/DSA/tree/master/0179-largest-number) |
 | [0455-assign-cookies](https://github.com/Aakashravi2004/DSA/tree/master/0455-assign-cookies) |
 ## Prefix Sum
 |  |
@@ -49,4 +52,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/Aakashravi2004/DSA/tree/master/0083-remove-duplicates-from-sorted-list) |
+## String
+|  |
+| ------- |
+| [0179-largest-number](https://github.com/Aakashravi2004/DSA/tree/master/0179-largest-number) |
 <!---LeetCode Topics End-->
